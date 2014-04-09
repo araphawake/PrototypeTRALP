@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lambda.prototypetralp.MainActivity$PlaceholderFragment" >
+    
+    <LinearLayout android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    <TextView android:id="@+id/Welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/descriptor_message"
+        android:textSize="18sp"
+        />
+    </LinearLayout>
+    
+    <RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true">
+
+        <Button android:id="@+id/text_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/write"
+            android:textStyle="bold"/>
+        <Button android:id="@+id/record_button"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:soundEffectsEnabled="true"
+	        android:textStyle="bold"
+	        android:text="@string/record_warning"
+	        android:onClick="startRecording"/>
+	        
+        <!--<Button android:id="@+id/send_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_send"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginBottom="1dp"
+	        android:onClick="send_message"/>
+        
+       		<EditText android:id="@+id/edit_message"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/edit_message"
+	        android:layout_toLeftOf="@id/send_button" />
+		-->   
+   </RelativeLayout>
+</RelativeLayout>
