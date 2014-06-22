@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:scrollbars="vertical"
-    tools:context="com.lambda.prototypetralpv1.DisplaySentMessage$PlaceholderFragment" >
+    tools:context="com.lambda.prototypetralpv2.DisplaySentMessage$PlaceholderFragment" >
  
     <EditText android:id="@+id/edit"
 	        android:layout_width="fill_parent"
